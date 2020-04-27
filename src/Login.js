@@ -7,9 +7,8 @@ const Login = () => {
   }
 
   return (
-    <div className='login-form'>
-      <img src='./logotipoiseries.png' class='img-fluid imgthumbnail' alt='iSéries' />
-      <h4 class='modal-title'>Acesse Seu Gerenciador</h4>
+    <div className='login-form mb-10'>
+            <img src='./logotipoiseries.png' class='img-fluid imgthumbnail mb-5' alt='iSéries' />
       <div className='form-group'>
         <input type='text' class='form-control' placeholder='Email' required='required' />
       </div>

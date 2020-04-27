@@ -16,14 +16,12 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all build start-server",
     "start-react": "react-scripts start",
     "start-server": "node ./node_modules/minhas-series-server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "now-build": "npm run build"   
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": "react-app"
