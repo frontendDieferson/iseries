@@ -6,6 +6,7 @@ import EditarGenero from './EditarGenero'
 import Series from './Series'
 import NovaSerie from './NovaSerie'
 import InfoSerie from './InfoSerie'
+import Login from './Login'
 
 import {
   BrowserRouter as Router,
@@ -13,17 +14,14 @@ import {
   Switch
 } from 'react-router-dom'
 
-const Home = () => {
-  return <h1>iSéries</h1>
-}
 
 function App () {
   return (
     <Router>
       <div>
-        <Header />
+        <Login />
         <Switch>
-          <Route path='/' exact component={Home} />
+          <Route path='/Login' exact component={Login} />
           <Route path='/generos' exact component={Generos} />
           <Route path='/generos/novo' exact component={NovoGenero} />
           <Route path='/generos/:id' exact component={EditarGenero} />
