@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
 
 const Login = () => {
@@ -8,7 +9,7 @@ const Login = () => {
 
   return (
     <div className='login-form mb-10'>
-            <img src='./logotipoiseries.png' class='img-fluid imgthumbnail mb-5' alt='iSéries' />
+      <img src='./logotipoiseries.png' class='img-fluid imgthumbnail mb-5' alt='iSéries' />
       <div className='form-group'>
         <input type='text' class='form-control' placeholder='Email' required='required' />
       </div>
@@ -20,7 +21,7 @@ const Login = () => {
         <a href='#' class='forgot-link'>Esqueceu sua Senha?</a>
       </div>
       <input type='submit' class='btn btn-primary btn-block btn-lg' value='Login' />
-      <div className='text-center small'>Não tem Conta? <a href='#'>Cadastre-se</a></div>
+      <div className='text-center small mb-2'>Não tem Conta? <a href='#'>Cadastre-se</a></div>
     </div>
 
   )

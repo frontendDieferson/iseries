@@ -18,7 +18,7 @@ function App () {
   return (
     <Router>
       <div>
-        <Login />
+        <Header />
         <Switch>
           <Route path='/Login' exact component={Login} />
           <Route path='/generos' exact component={Generos} />

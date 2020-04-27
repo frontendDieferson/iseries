@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <Navbar color='light' light expand='md'>
       <div className='container'>
-        <NavbarBrand tag={Link} to='/'>Minhas Séries</NavbarBrand>
+        <NavbarBrand tag={Link} to='/'><img src='./logotipoiseries.png' class='img-fluid imgthumbnail'
+          width='150px' height='200px' alt='iSéries' />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={open} navbar>
           <Nav className='ml-auto' navbar>
