@@ -2,7 +2,7 @@
   "name": "iseries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/build",
+  "homepage": "https://github.com/frontendDieferson/iseries",
   "engines": {
     "node": "12.16.1"
   },
