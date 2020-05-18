@@ -2,7 +2,7 @@
   "name": "iseries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/usr/src/app",
+  "homepage": "/build",
   "engines": {
     "node": "12.16.1"
   },
