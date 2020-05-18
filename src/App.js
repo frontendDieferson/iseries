@@ -28,6 +28,7 @@ function App () {
           <Route path='/series/novo' exact component={NovaSerie} />
           <Route path='/series/:id' exact component={InfoSerie} />
         </Switch>
+
       </div>
     </Router>
   )
