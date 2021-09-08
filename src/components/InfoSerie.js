@@ -8,7 +8,7 @@ const InfoSerie = ({ match }) => {
     const [form, setForm] = useState({})
     const [success, setSuccess] = useState(false)
     const [mode, setMode] = useState('EDIT')
-    const [genres, setGenres] = useState({})
+    const [genres, setGenres] = useState([])
 
 
 
@@ -110,9 +110,7 @@ const InfoSerie = ({ match }) => {
             <div className='form-group'>
                 <label htmlFor='name'>Gênero</label>
                 <select className='form-control'>
-                   {genres.map(genres =><option key={genres.id} value={genres.id}>{genres.name}</option>)} 
-                       
-                  
+                  { genres.map(genre => <option key={genre.id} value={genre.id}>{genre.name}</option>) }
                 </select>
             </div>
             <button type='button' onClick={save} className='btn btn-primary' style={{marginTop: 10}}>Salvar</button>
