@@ -13,19 +13,24 @@ function Header() {
 
   return (
     <div>
-      <Navbar color='dark' dark expand='md'>
+      <Navbar color='light' light expand='md'>
+          <div className='container'>
         <NavbarBrand className='container' tag={Link} to='/'>iSeries</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={open} navbar>
           <Nav className='mr-auto' navbar>
               <NavItem>
+              <NavLink tag={Link} to='/series'>Séries</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
               </NavItem>
           </Nav>
         </Collapse>
+          </div>
       </Navbar>
     </div>
   )
 }
 
-export default Header;
+export default Header

@@ -4,20 +4,20 @@ import { Link, NavLink } from 'react-router-dom'
 
 
 
-const Generos =() => {
+const Series =() => {
     const [ data, setData ] = useState([])
 
     useEffect(() => {
         axios
-        .get('/api/genres/')
+        .get('/api/series/')
         .then(res => {
             setData(res.data.data)
         })
     }, [])
 
 
-    const deleteGenero = id => {
-      axios.delete('/api/genres/' + id)
+    const deleteSerie = id => {
+      axios.delete('/api/series/' + id)
       .then(res => {
         const filtrado = data.filter(item => item.id !==id)
         setData(filtrado)
@@ -31,8 +31,8 @@ const Generos =() => {
           <th scope='row'>{record.id}</th>
           <td>{record.name}</td>
           <td>
-            <button onClick={() => deleteGenero(record.id)} className='btn btn-danger'>Remover</button>
-            <Link to={'/generos/' + record.id} className='btn btn-warning'>Editar</Link>
+            <button className='btn btn-danger' onClick={() => deleteSerie(record.id)} >Remover</button>
+            <Link to={'/series/' + record.id} className='btn btn-warning'>Editar</Link>
           </td>
          
         </tr>
@@ -43,10 +43,10 @@ const Generos =() => {
       return (
         <div className='container'>
 
-          <h1>Gêneros</h1>
-          <Link className='btn btn-primary' to='/generos/novo'>Novo Gênero</Link>
+          <h1>Séries</h1>
+          <Link className='btn btn-primary' to='/series/novo'>Nova Série</Link>
           <div className='alert alert-warning' role='alert'>
-            Você não possui gêneros criados.
+            Você não possui séries criadas.
          </div>
       </div>
       )
@@ -54,9 +54,9 @@ const Generos =() => {
 
   return (
     <div className='container'>
-      <h1>Gêneros</h1>
+      <h1>Séries</h1>
         <div>
-        <Link className='btn btn-primary' to='/generos/novo'>Novo Gênero</Link>
+        <Link className='btn btn-primary' to='/series/novo'>Nova Série</Link>
         </div>
        
       <table className='table table-dark'>
@@ -75,4 +75,4 @@ const Generos =() => {
   )
 }
 
-export default Generos;
+export default Series

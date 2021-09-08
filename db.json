@@ -1,17 +1,43 @@
 {
   "series": {
-    "1": {
+    "1631060706496": {
+      "name": "Dark",
+      "poster": "//image.tmdb.org/t/p/original/5LoHuHWA4H8jElFlZDvsmU2n63b.jpg",
+      "background": "//image.tmdb.org/t/p/original/75HgaphatW0PDI3XIHQWZUpbhn6.jpg"
+    },
+    "1631060729589": {
       "name": "La casa de papel",
-      "status": "WATCHED",
-      "genre_id": 1,
-      "comments": "",
       "poster": "//image.tmdb.org/t/p/original/yVUAfbrP5HDJugXraB7KQS0yz6Z.jpg",
-      "background": "//image.tmdb.org/t/p/original/piuRhGiQBYWgW668eSNJ2ug5uAO.jpg"
+      "background": "//image.tmdb.org/t/p/original/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg"
+    },
+    "1631060737479": {
+      "name": "Supernatural",
+      "poster": "//image.tmdb.org/t/p/original/ovFzkkKknAo2SbM2DfOabxRvzmy.jpg",
+      "background": "//image.tmdb.org/t/p/original/nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg"
+    },
+    "1631062748520": {
+      "name": "The big bang theory",
+      "poster": "//image.tmdb.org/t/p/original/gXLGUSXp3ZLkjwX0x45NXCagiNH.jpg",
+      "background": "//image.tmdb.org/t/p/original/7RySzFeK3LPVMXcPtqfZnl6u4p1.jpg"
+    },
+    "1631063702593": {
+      "name": "The Witcher",
+      "poster": "//image.tmdb.org/t/p/original/A2oBYUKgjdy0UeIP88kkdyjw8z6.jpg",
+      "background": "//image.tmdb.org/t/p/original/s56eyXy8rADp5DpZknfe2HXq4u4.jpg"
     }
   },
   "genres": {
     "1631059226509": {
-      "name": "Ação 2"
+      "name": "Ação"
+    },
+    "1631059894129": {
+      "name": "Comédia Romântica"
+    },
+    "1631063678271": {
+      "name": "Comédia"
+    },
+    "1631066809400": {
+      "name": "Ficção Ciêntifica"
     }
   },
   "count": 0
